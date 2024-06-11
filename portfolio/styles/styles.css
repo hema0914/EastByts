@@ -1,0 +1,298 @@
+/*.red{
+    background:red;
+}
+.red{
+     background:green;
+}
+.box{
+     width:100px;
+     height:100px;
+}
+.green{
+    background:blanchedalmond;
+}
+.green{
+    background-color: black;
+}
+#green{
+    background-color: blueviolet;
+}
+div{
+    background-color: rgb(237, 180, 169);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .info {
+    padding: 20px;
+  }
+  
+  .info h2 {
+    margin-top: 0;
+  }
+  
+  .info p {
+    margin-bottom: 10px;
+  }
+  
+  .rating {
+    color: #ffcc00;
+  }
+  
+  .star {
+    font-size: 18px;
+  }
+  */
+  /* Reset */
+* /* styles.css */
+
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+ 
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+}
+
+/* Header styles */
+header {
+  background-color: #f9f9f9;
+  padding: 15px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+.logo h1 {
+  display: inline-block;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Product cards (main page) */
+.container {
+ 
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-color: #de5575;
+}
+
+.card img {
+  width: 20%;
+  height: auto;
+  display: block;
+}
+
+.info {
+  padding: 20px;
+}
+
+.info h2 {
+  margin-top: 0;
+}
+
+.info p {
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: #ffcc00;
+}
+
+.star {
+  font-size: 18px;
+}
+
+/* Product details (new window) */
+.product-details {
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+  width: 20%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-info h2 {
+  margin-top: 10px;
+}
+
+.product-info p1 {
+  margin-bottom: 10px;
+}
+
+.product-info button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.product-info button:hover {
+  background-color: #000000;
+}
+
+/* Footer styles */
+footer {
+    background-color: #958E69;
+  text-align: center;
+  padding: 2px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* CSS for heart icon */
+.heart-icon {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  font-size: 35px;
+  color: red;
+}
+
+/* Additional CSS for product image container */
+.product-image {
+  position: relative; /* To allow absolute positioning of the heart icon */
+}
+
+.card {
+  position: relative; /* To allow absolute positioning of the heart icon */
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #9d9696;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #000000;
+}
+.signin-button {
+  background-color: #000000;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 20px; /* Adjust margin for positioning */
+}
+.signin-button:hover {
+  background-color: #d94368;
+}
